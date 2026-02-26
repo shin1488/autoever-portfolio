@@ -12,9 +12,9 @@
     z-index: 1000;
     border: 1px solid rgba(0, 70, 255, 0.2);
     border-radius: 100px;
-    background: rgba(230, 237, 255, 0.75);
+    background: rgba(230, 237, 255, 0.65);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5ㄴpx);
+    -webkit-backdrop-filter: blur(5px);
 
     width: 300px;
     height: auto;
@@ -26,7 +26,7 @@
     padding: 16px;
     width: 100%;
     background: transparent;
-    color: #111827;
+    color: var(--color-blue-black);
     text-align: center;
     transition: 0.25s;
     border-radius: 100px;
@@ -35,5 +35,5 @@
 
 .nav_container :global(a.active),
 .nav_container :global(a:hover) {
-    background: #99ADFF;
+    background: var(--color-secondary);
 }

@@ -1,3 +1,16 @@
+:root {
+  --color-primary: #0046FF;
+  --color-secondary: #99ADFF;
+  --color-hover: #336BFF;
+  --color-click: #0038CC;
+  --color-card-background: #E6EDFF;
+  --color-blue-black: #111827;
+}
+
+h1, h2, h3, p {
+  color: var(--color-blue-black);
+}
+
 html,
 body,
 div,
