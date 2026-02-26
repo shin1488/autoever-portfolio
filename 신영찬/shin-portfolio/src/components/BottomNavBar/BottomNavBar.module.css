@@ -1,6 +1,7 @@
 .nav_container {
     display: flex;
     justify-content: space-around;
+    gap: 8px;
 
     /* 화면 정 중앙에 배치하기 위함 */
     left: 50%;
