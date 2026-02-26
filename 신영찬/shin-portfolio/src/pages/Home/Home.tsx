@@ -1,8 +1,11 @@
 import IntroduceContainer from "../../containers/IntroduceContainer/IntroduceContainer";
+import styles from './Home.module.css';
 
 const Home = () => {
     return (
-        <IntroduceContainer />  
+        <div className={styles.home}>
+            <IntroduceContainer />
+        </div>
     );
 }
 
