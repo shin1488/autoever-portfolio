@@ -1,8 +1,9 @@
-import Header from "../../components/Header/Header"
+import IntroduceContainer from "../../containers/IntroduceContainer/IntroduceContainer";
 
 const Home = () => {
     return (
-        <Header />
-        
-    )
+        <IntroduceContainer />  
+    );
 }
+
+export default Home;

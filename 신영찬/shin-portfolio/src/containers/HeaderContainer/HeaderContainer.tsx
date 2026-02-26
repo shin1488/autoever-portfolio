@@ -1,5 +1,5 @@
-import DividerPrimary from '../Divider/DividerPrimary';
-import Header from '../Header/Header';
+import DividerPrimary from '../../components/Divider/DividerPrimary';
+import Header from '../../components/Header/Header';
 import styles from './HeaderContainer.module.css';
 
 const HeaderContainer = () => {
