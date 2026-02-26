@@ -1,0 +1,38 @@
+.nav_container {
+    display: flex;
+    justify-content: space-around;
+
+    /* 화면 정 중앙에 배치하기 위함 */
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: fixed;
+    bottom: 24px;
+
+    z-index: 1000;
+    border: 1px solid rgba(0, 70, 255, 0.2);
+    border-radius: 100px;
+    background: rgba(230, 237, 255, 0.75);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5ㄴpx);
+
+    width: 300px;
+    height: auto;
+    min-height: auto;
+    padding: 8px 16px;
+}
+
+.nav_container :global(a) {
+    padding: 16px;
+    width: 100%;
+    background: transparent;
+    color: #111827;
+    text-align: center;
+    transition: 0.25s;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.nav_container :global(a.active),
+.nav_container :global(a:hover) {
+    background: #99ADFF;
+}
