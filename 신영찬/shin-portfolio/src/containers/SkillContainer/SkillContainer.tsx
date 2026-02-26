@@ -1,7 +1,7 @@
 import SkillIcon from "../../components/SkillIcon/SkillIcon";
 import styles from './SkillContainer.module.css';
 
-const SkillContainer = ({ items }) => (
+const SkillContainer = ({ items }: any) => (
     <div className={styles.container}>
         {items.map(item => (
             <SkillIcon img={item.logo} name={item.name}/>
