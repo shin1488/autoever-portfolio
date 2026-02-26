@@ -1,5 +1,5 @@
 import styles from './Header.module.css';
-import logo from '../assets/logo.png';
+import logo from '../../assets/logo.png';
 
 const Header = () => {
     return (
@@ -15,7 +15,7 @@ const Header = () => {
                 <p>GuestBook</p>
             </div>
         </header>
-    )
+    );
 }
 
 export default Header;
