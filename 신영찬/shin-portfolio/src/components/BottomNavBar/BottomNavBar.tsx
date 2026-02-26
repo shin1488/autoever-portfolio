@@ -5,7 +5,7 @@ const BottomNavBar = () => {
         <div className={styles.nav_container}>
             <a href="mailto:shin1488dev@gmail.com">Email</a>
             <a href="https://github.com/shin1488" target="_blank">Github</a>
-            <a href="https://codi-agit.com/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/영찬-신-9aa85b3b3">LinkedIn</a>
         </div>
     );
 }
