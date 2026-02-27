@@ -6,3 +6,9 @@
     padding: 48px 0;
     gap: 24px;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+}
