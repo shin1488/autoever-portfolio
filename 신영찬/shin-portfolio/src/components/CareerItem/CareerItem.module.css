@@ -36,3 +36,12 @@
 .description {
     color: var(--color-blue-gray);
 }
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+}
