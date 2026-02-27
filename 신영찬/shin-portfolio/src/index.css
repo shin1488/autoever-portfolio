@@ -5,6 +5,9 @@
   --color-click: #0038CC;
   --color-card-background: #E6EDFF;
   --color-blue-black: #111827;
+  --color-blue-white: #F9FAFB;
+  --color-blue-light-gray: #D1D5DB;
+  --color-blue-gray: #6B7280;
 }
 
 h1, h2, h3, p {
@@ -98,7 +101,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  background-color: #F9FAFB;
+  background-color: var(--color-blue-white);
 }
 
 /* HTML5 display-role reset for older browsers */

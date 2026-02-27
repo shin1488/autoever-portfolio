@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.date_section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    min-width: 200px;
+    flex-shrink: 0;
+}
+
+.icon {
+
+}
+
+.date {
+    font-size: 16px;
+}
+
+.info_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.description {
+    color: var(--color-blue-gray);
+}

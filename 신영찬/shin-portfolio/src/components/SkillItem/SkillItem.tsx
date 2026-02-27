@@ -1,4 +1,4 @@
-import styles from './SkillIcon.module.css';
+import styles from './SkillItem.module.css';
 
 const SkillIcon = ({ img, name }: any) => {
     return (

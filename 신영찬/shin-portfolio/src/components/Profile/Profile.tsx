@@ -6,7 +6,7 @@ const Profile = () => {
         <div className={styles.profile_container}>
             <img className={styles.profile_image} src={profileImage} />
             <div className={styles.introduce_section}>
-                <p className={styles.name}>신영찬</p>
+                <h1 className={styles.name}>신영찬</h1>
                 <p className={styles.job}>Android Developer</p>
                 <div className={styles.info}>
                     <p>Birth: 1998-06-25</p>
