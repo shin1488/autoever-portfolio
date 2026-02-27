@@ -38,9 +38,9 @@ export const CAREER_DATA = [
                 description: "N1"
             },
             {
-                name: "mos 2016 Excel(Expert)",
+                name: "mos 2016 Excel",
                 date: "2020.12.14",
-                description: null
+                description: "Expert"
             },
         ]
     },
