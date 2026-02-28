@@ -55,6 +55,11 @@
     font-size: 16px;
 }
 
+.date,
+.summary {
+    color: var(--color-blue-gray);
+}
+
 .summary {
     /* 2줄을 초과하는 내용이 들어갔을 때 말줄임표를 사용해 최대 2줄만 표시하도록 함 */
     display: -webkit-box;
@@ -100,5 +105,5 @@
 }
 
 .personal {
-    background-color: var(--color-blue-gray);
+    background-color: var(--color-green);
 }
