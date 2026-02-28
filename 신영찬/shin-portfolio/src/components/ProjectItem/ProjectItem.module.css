@@ -87,15 +87,18 @@
     height: 24px;
 }
 
-/* 조건부 렌더링 */
-.team {
+.team,
+.personal {
     padding: 7px;
     color: var(--color-blue-white);
-    background-color: var(--color-primary);
     border-radius: 5px;
 }
 
+/* 조건부 렌더링 */
+.team {
+    background-color: var(--color-primary);
+}
+
 .personal {
-    color: #10b981;
-    background-color: #ecfdf5;
+    background-color: var(--color-blue-gray);
 }

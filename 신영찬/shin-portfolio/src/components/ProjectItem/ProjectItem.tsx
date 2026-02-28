@@ -3,7 +3,7 @@ import logo from '../../assets/logo.png';
 import { TECH_STACK_DATA } from '../../data/techStack';
 
 const ProjectItem = () => {
-    const isTeam = true;
+    const isTeam = false;
 
     const selectedStacks = [
         TECH_STACK_DATA[0].items[0], // TypeScript
