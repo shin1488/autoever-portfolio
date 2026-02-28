@@ -80,11 +80,19 @@
     align-items: center;
     width: 100%;
     margin-top: 8px;
+    gap: 8px;
+    overflow: hidden;
 }
 
 .stack_section {
     display: flex;
     gap: 8px;
+    flex: 1;
+
+    /* 한줄 넘어가도 한줄로 유지되게 한다고 함 */
+    overflow: hidden;
+    flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .stack_logo {
@@ -97,6 +105,7 @@
     padding: 7px;
     color: var(--color-blue-white);
     border-radius: 5px;
+    flex: none;
 }
 
 /* 조건부 렌더링 */
@@ -106,4 +115,17 @@
 
 .personal {
     background-color: var(--color-green);
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: fit-content;
+    }
+
+    .tag_section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+    }
 }

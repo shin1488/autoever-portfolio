@@ -8,6 +8,10 @@ const ProjectItem = () => {
     const selectedStacks = [
         TECH_STACK_DATA[0].items[0], // TypeScript
         TECH_STACK_DATA[0].items[1], // JavaScript
+        TECH_STACK_DATA[0].items[1], // JavaScript
+        TECH_STACK_DATA[0].items[1], // JavaScript
+        TECH_STACK_DATA[0].items[1], // JavaScript
+        TECH_STACK_DATA[0].items[1], // JavaScript
     ];
 
     return (
