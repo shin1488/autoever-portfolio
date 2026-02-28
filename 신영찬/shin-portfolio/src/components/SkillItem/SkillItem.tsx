@@ -1,9 +1,10 @@
+import { getIconUrl } from '../../utils/getIconUrl';
 import styles from './SkillItem.module.css';
 
-const SkillIcon = ({ img, name }: any) => {
+const SkillIcon = ({ name }: any) => {
     return (
         <div className={styles.icon_container}>
-            <img className={styles.img} src={img}/>
+            <img className={styles.img} src={getIconUrl(name)}/>
             <p className={styles.name} >{name}</p>
         </div>
     );

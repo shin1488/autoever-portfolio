@@ -4,7 +4,7 @@ import styles from './SkillContainer.module.css';
 const SkillContainer = ({ items }: any) => (
     <div className={styles.container}>
         {items.map((item: any) => (
-            <SkillItem key={item.name} img={item.logo} name={item.name} />
+            <SkillItem key={item.name} name={item.name} />
         ))}
     </div>
 );
