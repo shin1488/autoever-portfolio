@@ -28,6 +28,11 @@ export const CAREER_DATA = [
                 description: "장려상"
             },
             {
+                name: "31사단 독서 감상문 경연대회",
+                date: "2019.02.19",
+                description: "우수상"
+            },
+            {
                 name: "정보처리기사",
                 date: "2022.11.25",
                 description: null
