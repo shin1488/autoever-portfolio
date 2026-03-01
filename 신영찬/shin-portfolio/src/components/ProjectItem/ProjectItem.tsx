@@ -1,18 +1,7 @@
 import styles from './ProjectItem.module.css';
-import { useEffect, useState } from 'react';
-import { getProjects } from '../../api/projects';
-import { getIconUrl } from '../../utils/getIconUrl';
+import { getIconUrl } from '../../api/getIconUrl';
 
-const ProjectItem = () => {
-    const [project, setProject] = useState<any>(null);
-
-    useEffect(() => {
-        getProjects().then((data) => {
-            const target = data.find((p: any) => p.id === 2);
-            setProject(target);
-        });
-    }, []);
-
+const ProjectItem = ({ project }: any) => {
     if (!project) return null;
 
     return (
@@ -23,6 +12,7 @@ const ProjectItem = () => {
             <div className={styles.info_section}>
                 <h2 className={styles.title}>{project.title}</h2>
                 <p className={styles.date}>
+                    {/* 날짜 파싱 */}
                     {project.start_date?.replace(/-/g, '.').slice(0, 7)} ~
                     {project.end_date ? project.end_date.replace(/-/g, '.').slice(0, 7) : '진행 중'}
                 </p>
@@ -32,7 +22,6 @@ const ProjectItem = () => {
                         {project.stacks?.map((stack: any) => (
                             <img
                                 key={stack.name}
-                                // CDN URL을 동적으로 생성하여 주입
                                 src={getIconUrl(stack.name)}
                                 alt={stack.name}
                                 className={styles.stack_logo}

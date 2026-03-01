@@ -1,4 +1,4 @@
-import { getIconUrl } from '../../utils/getIconUrl';
+import { getIconUrl } from '../../api/getIconUrl';
 import styles from './SkillItem.module.css';
 
 const SkillIcon = ({ name }: any) => {

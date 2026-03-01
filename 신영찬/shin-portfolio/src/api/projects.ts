@@ -7,8 +7,7 @@ export const getProjects = async () => {
       *,
       project_stacks (
         tech_stacks (
-          name,
-          logo_url
+          name
         )
       )
     `)
@@ -19,7 +18,7 @@ export const getProjects = async () => {
     return [];
   }
 
-  // 데이터 구조를 사용하기 편하게 가공 (Optional)
+  // 데이터 구조를 사용하기 편하게 가공
   return data.map(project => ({
     ...project,
     // 중첩된 객체 구조를 단순 배열로 펼침
