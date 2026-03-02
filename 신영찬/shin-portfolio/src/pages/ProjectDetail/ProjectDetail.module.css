@@ -55,6 +55,14 @@
     width: 100%;
 }
 
+.stack_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+
 
 .stack_logo {
     width: 32px;
