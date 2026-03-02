@@ -18,3 +18,14 @@
     gap: 24px;
     width: 100%;
 }
+
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 120px;
+    }
+
+    .title {
+        font-size: 48px;
+    }
+}

@@ -72,10 +72,6 @@
 
 
 @media (max-width: 768px) {
-    .back_btn {
-        font-size: 14px;
-    }
-
     .title {
         font-size: 32px;
     }
