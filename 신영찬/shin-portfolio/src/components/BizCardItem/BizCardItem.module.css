@@ -61,7 +61,7 @@
     background-image: url('/foil/angular.png');
     background-size: cover;
     mix-blend-mode: color-dodge;
-    opacity: 0.2;
+    opacity: 0.05;
     transition: opacity 0.3s ease;
     pointer-events: none;
     z-index: 2;

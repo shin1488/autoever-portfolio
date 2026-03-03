@@ -68,7 +68,7 @@ const BizCardItem = ({ data }: { data: Tables<'guestbook'> }) => {
                             <p className={styles.info_value}>{data.experience}년</p>
                         </div>
                         <div className={styles.info_item}>
-                            <p className={styles.info_label}>스택</p>
+                            <p className={styles.info_label}>직무</p>
                             <p className={styles.info_value}>{data.main_stack}</p>
                         </div>
                         <div className={styles.info_item}>

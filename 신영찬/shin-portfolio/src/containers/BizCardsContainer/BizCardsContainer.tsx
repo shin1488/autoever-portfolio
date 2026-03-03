@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { getVisibleGuestbooks } from '../../api/getGuestbook';
 import type { Tables } from '../../types/supabase';
 import BizCardContainer from '../BizCardContainer/BizCardContainer';
+import { Link } from 'react-router-dom';
 
 const BizCardsContainer = () => {
     const [entries, setEntries] = useState<Tables<'guestbook'>[]>([]);
@@ -32,6 +33,8 @@ const BizCardsContainer = () => {
                     <BizCardContainer key={entry.id} data={entry} />
                 ))}
             </div>
+
+            <Link to="/guestbook/write" className={styles.floating_button}>+</Link>
         </div>
     );
 };
