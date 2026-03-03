@@ -1,7 +1,7 @@
 .container {
     display: grid;
-    /* repeat은 아이템 개수 자동 계산, 800px~남는 자리 다 차지하라는 의미 */
-    grid-template-columns: repeat(auto-fit, minmax(750px, 1fr));
+    /* repeat은 아이템 개수 자동 계산, 786px~남는 자리 다 차지하라는 의미 */
+    grid-template-columns: repeat(auto-fit, minmax(786px, 1fr));
     justify-content: center;
     justify-items: center;
     gap: 64px;
