@@ -31,26 +31,36 @@ const GuestBookForm = () => {
         }));
     };
 
-    const handleSubmit = async () => {
+    const handleSubmit = async (e: React.SubmitEvent) => {
+        e.preventDefault();
+
         const { visitor_name, profile_img, main_stack, experience, mbti, phone } = formData;
-        if (!visitor_name || !profile_img || !main_stack || !experience || !mbti || !phone) {
+
+        if (!visitor_name || !profile_img || !main_stack || mbti === '' || !phone || experience === undefined || experience === null) {
+            console.warn("Validation Failed. Current Data:", formData);
             alert('모든 필수 항목(*)을 입력해주세요.');
             return;
         }
+
         try {
-            await createGuestbook(formData);
+            const result = await createGuestbook(formData);
+            console.log("Submit Success:", result);
             alert('방명록이 등록되었습니다!');
             navigate('/guestbook');
         } catch (err) {
-            console.error(err);
-            alert('등록 실패');
+            console.error("에러 :", {
+                message: err instanceof Error ? err.message : "Unknown error",
+                error: err,
+                sentData: formData
+            });
+            alert(`등록 실패: ${err instanceof Error ? err.message : '알 수 없는 오류'}`);
         }
     };
 
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>방명록 작성</h1>
-            <form className={styles.form_section}>
+            <form className={styles.form_section} onSubmit={handleSubmit}>
                 <div className={styles.split_wrapper}>
                     {/* 왼쪽: 미리보기 */}
                     <div className={styles.left_side}>
@@ -116,7 +126,7 @@ const GuestBookForm = () => {
                                 </div>
                                 <div className={styles.btn_row}>
                                     <button type='button' className={styles.back_btn} onClick={() => setStep(1)}>돌아가기</button>
-                                    <button type='submit' className={styles.submit_btn} onClick={handleSubmit}>방명록 작성</button>
+                                    <button type='submit' className={styles.submit_btn}>방명록 작성</button>
                                 </div>
                             </div>
                         </div>
